@@ -534,6 +534,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 2.5rem;
+            align-items: start;
         }
 
         .benefit-card {
@@ -544,6 +545,9 @@
             transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             position: relative;
             overflow: hidden;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
         }
 
         .benefit-card::before {
@@ -614,6 +618,7 @@
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 2.5rem;
             margin-top: 4rem;
+            align-items: start;
         }
 
         .agent-card {
@@ -624,6 +629,9 @@
             transition: all 0.5s ease;
             position: relative;
             overflow: hidden;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
         }
 
         .agent-card::after {
@@ -1531,10 +1539,14 @@
             <div class="footer-section">
                 <h4 data-translate="footer_contact">Contact</h4>
                 <ul class="footer-links">
-                    <li><a href="mailto:support@mindstate.tech">support@mindstate.tech</a></li>
-                    <li><a href="mailto:careers@mindstate.tech">careers@mindstate.tech</a></li>
-                    <li><a href="https://www.mindstate.tech" target="_blank">mindstate.tech</a></li>
-                    <li><a href="https://stages.mindstate.tech" target="_blank">stages.mindstate.tech</a></li>
+                    <li style="line-height: 1.8; margin-bottom: 0.5rem;">
+                        <strong>Siège social :</strong><br>
+                        06, Impasse N°01, Avenue Abdelaziz Thaalbi<br>
+                        Menzah 9A 1013 TUNIS
+                    </li>
+                    <li><a href="tel:+21636694639">+216 36 694 639</a></li>
+                    <li><a href="tel:+21626318117">+216 26 318 117</a></li>
+                    <li><a href="mailto:contact@mindstate.tech">contact@mindstate.tech</a></li>
                 </ul>
             </div>
         </div>
