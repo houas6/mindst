@@ -94,7 +94,7 @@
         }
 
         .logo-img {
-            height: 50px;
+            height: 120px;
             width: auto;
             filter: drop-shadow(0 0 25px rgba(255, 107, 157, 0.5));
             transition: filter 0.3s ease;
@@ -434,6 +434,10 @@
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
             animation: float 6s ease-in-out infinite;
             transition: all 0.3s ease;
+             display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
         }
 
         .floating-card:hover {
@@ -1160,10 +1164,12 @@
                     </div>
                 </div>
 
-                <a href="mailto:support@mindstate.tech" class="btn-premium">
-                    <span data-translate="nav_demo">Demander une démo</span>
-                    <span>→</span>
-                </a>
+                <a href="https://calendly.com/hgara-mindstate/30min?month=2025-11"
+   class="btn-premium"
+   target="_blank" rel="noopener noreferrer">
+    <span data-translate="nav_demo">Demander une démo</span>
+    <span>→</span>
+</a>
 
                 <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
             </div>
@@ -1184,10 +1190,13 @@
                     Automatisez, optimisez et innovez avec notre plateforme d'IA Neural premium.
                 </p>
                 <div class="hero-actions">
-                    <a href="mailto:support@mindstate.tech" class="btn-premium">
-                        <span data-translate="cta_demo">Demander une démo gratuite</span>
-                        <span>→</span>
-                    </a>
+                    <a href="https://calendly.com/hgara-mindstate/30min?month=2025-11"
+   class="btn-premium"
+   target="_blank" rel="noopener noreferrer">
+    <span data-translate="cta_demo">Demander une démo gratuite</span>
+    <span>→</span>
+</a>
+
                     <a href="#benefits" class="btn-outline" data-translate="cta_discover">Découvrir nos solutions</a>
                 </div>
                 <div class="hero-stats">
@@ -1457,10 +1466,13 @@
                 Rejoignez les entreprises leaders qui font confiance à MindState AI pour automatiser leurs processus et multiplier leur productivité.
             </p>
             <div class="cta-buttons">
-                <a href="mailto:support@mindstate.tech" class="btn-premium">
-                    <span data-translate="cta_demo">Demander une démo gratuite</span>
-                    <span>→</span>
-                </a>
+                <a href="https://calendly.com/hgara-mindstate/30min?month=2025-11"
+   class="btn-premium"
+   target="_blank" rel="noopener noreferrer">
+    <span data-translate="cta_demo">Demander une démo gratuite</span>
+    <span>→</span>
+</a>
+
                 <a href="mailto:careers@mindstate.tech" class="btn-outline" id="careers">
                     <span data-translate="cta_careers">Rejoindre notre équipe</span>
                     <span>💼</span>
@@ -1851,28 +1863,63 @@
 
         let currentLang = 'fr';
 
-        function changeLang(lang) {
-            currentLang = lang;
-            document.documentElement.lang = lang;
-            document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
-            
-            document.querySelectorAll('[data-translate]').forEach(element => {
-                const key = element.getAttribute('data-translate');
-                if (translations[lang][key]) {
-                    element.textContent = translations[lang][key];
-                }
-            });
+        // <<< SVG EN LIGNE POUR CHAQUE DRAPEAU >>>
 
-            document.getElementById('currentLang').textContent = lang.toUpperCase();
-            
-            document.querySelectorAll('.lang-option').forEach(option => {
-                option.classList.remove('active');
-            });
-            event.target.closest('.lang-option').classList.add('active');
-            
-            document.getElementById('langDropdown').classList.remove('active');
-            localStorage.setItem('preferredLang', lang);
+const flagSVG = {
+    fr: `
+        <svg class="lang-flag" viewBox="0 0 36 36">
+                                <path fill="#ED2939" d="M36 27a4 4 0 0 1-4 4h-8V5h8a4 4 0 0 1 4 4v18z"></path>
+                                <path fill="#002495" d="M4 5a4 4 0 0 0-4 4v18a4 4 0 0 0 4 4h8V5H4z"></path>
+                                <path fill="#EEE" d="M12 5h12v26H12z"></path>
+        </svg>
+    `,
+    en: `
+        <svg class="lang-flag" viewBox="0 0 36 36">
+             <path fill="#00247D" d="M0 9.059V13h5.628zM4.664 31H13v-5.837zM23 25.164V31h8.335zM0 23v3.941L5.63 23zM31.337 5H23v5.837zM36 26.942V23h-5.631zM13 10.837V5H4.664zM36 13V9.059L30.371 13z"></path>
+             <path fill="#CF1B2B" d="M25.14 23l9.712 6.801a3.977 3.977 0 0 0 .99-1.749L28.627 23H25.14zM13 23h-2.141l-9.711 6.8c.521.53 1.189.909 1.938 1.085L13 23.943V23zm10-10h2.141l9.711-6.8a3.988 3.988 0 0 0-1.937-1.085L23 12.057V13zm-12.141 0L1.148 6.2a3.994 3.994 0 0 0-.991 1.749L7.372 13h3.487z"></path>
+            <path fill="#EEE" d="M36 21H21v10h2v-5.836L31.335 31H32a3.99 3.99 0 0 0 2.852-1.199L25.14 23h3.487l7.215 5.052c.093-.337.158-.686.158-1.052v-.058L30.369 23H36v-2zM0 21v2h5.628L0 26.941V27c0 1.091.439 2.078 1.148 2.8l9.711-6.8H13v.943l-9.914 6.941c.294.07.598.116.914.116h.664L13 25.163V31h2V21H0zM36 9a3.983 3.983 0 0 0-1.148-2.8L25.141 13H23v-.943l9.915-6.942A4.001 4.001 0 0 0 32 5h-.663L23 10.837V5h-2v10h15v-2h-5.628L36 9.059V9zM13 5v5.837L4.664 5H4a3.985 3.985 0 0 0-2.852 1.2l9.711 6.8H7.372L.157 7.949A3.968 3.968 0 0 0 0 9v.059L5.628 13H0v2h15V5h-2z"></path>
+            <path fill="#CF1B2B" d="M21 15V5h-6v10H0v6h15v10h6V21h15v-6z"></path>
+        </svg>
+    `,
+    ar: `
+        <svg class="lang-flag" viewBox="0 0 36 36">
+            <path fill="#165F29" d="M36 27a4 4 0 0 1-4 4H4a4 4 0 0 1-4-4V9a4 4 0 0 1 4-4h28a4 4 0 0 1 4 4v18z"></path>
+            <text x="18" y="22" font-size="10" fill="#FFF" text-anchor="middle" font-weight="bold">🇸🇦</text>
+        </svg>
+    `
+};
+
+        function changeLang(lang) {
+    currentLang = lang;
+    document.documentElement.lang = lang;
+    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+
+    // Mise à jour traductions
+    document.querySelectorAll('[data-translate]').forEach(element => {
+        const key = element.getAttribute('data-translate');
+        if (translations[lang][key]) {
+            element.textContent = translations[lang][key];
         }
+    });
+
+    // Mise à jour texte FR / EN / AR
+    document.getElementById('currentLang').textContent = lang.toUpperCase();
+
+    // 🔥 CHANGER LE SVG DU DRAPEAU
+    document.getElementById('currentFlag').outerHTML = flagSVG[lang];
+
+    // Réassigner l'ID (puisqu'on remplace le SVG entier)
+    const newFlag = document.querySelector('.lang-button svg');
+    newFlag.id = "currentFlag";
+
+    // Marquer la langue active
+    document.querySelectorAll('.lang-option').forEach(option => option.classList.remove('active'));
+    event.target.closest('.lang-option').classList.add('active');
+
+    document.getElementById('langDropdown').classList.remove('active');
+    localStorage.setItem('preferredLang', lang);
+}
+
 
         function toggleLangDropdown() {
             document.getElementById('langDropdown').classList.toggle('active');
