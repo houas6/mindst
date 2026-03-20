@@ -762,6 +762,18 @@
       </div>
     </footer>
 
+    <!-- COOKIE BANNER -->
+    <div class="cookie-banner" id="cookie-banner">
+      <span class="cookie-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/><path d="M2 12h.01"/><path d="M12 2v.01"/><circle cx="8" cy="8" r="1"/><circle cx="12" cy="14" r="1"/><circle cx="16" cy="10" r="1"/><circle cx="9" cy="18" r="1"/></svg></span>
+      <div class="cookie-content">
+        <p>Nous utilisons des cookies pour assurer le bon fonctionnement du site et analyser le trafic de manière anonyme. <a href="politique-confidentialite.html">Politique de confidentialité</a></p>
+        <div class="cookie-actions">
+          <button class="btn btn-ghost btn-sm" id="cookie-decline">Refuser</button>
+          <button class="btn btn-primary btn-sm" id="cookie-accept">Accepter</button>
+        </div>
+      </div>
+    </div>
+
     <script>
       // Burger menu
       const burger = document.getElementById("burger");
@@ -865,6 +877,25 @@
           });
         });
       });
+
+      // Cookie banner
+      (function () {
+        const banner = document.getElementById("cookie-banner");
+        if (localStorage.getItem("cookies-choice")) {
+          banner.style.display = "none";
+          return;
+        }
+        banner.classList.add("visible");
+
+        document.getElementById("cookie-accept").addEventListener("click", () => {
+          localStorage.setItem("cookies-choice", "accepted");
+          banner.classList.remove("visible");
+        });
+        document.getElementById("cookie-decline").addEventListener("click", () => {
+          localStorage.setItem("cookies-choice", "declined");
+          banner.classList.remove("visible");
+        });
+      })();
     </script>
   </body>
 </html>
