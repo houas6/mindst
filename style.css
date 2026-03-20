@@ -20,6 +20,102 @@
   --transition: 0.2s ease;
 }
 
+[data-theme="light"] {
+  --bg: #ffffff;
+  --bg-elevated: #f9fafb;
+  --bg-surface: #f3f4f6;
+  --bg-subtle: #e5e7eb;
+  --border: #e5e7eb;
+  --border-subtle: #f3f4f6;
+  --text: #111827;
+  --text-secondary: #4b5563;
+  --text-muted: #9ca3af;
+  --accent: #374151;
+  --accent-dim: rgba(55, 65, 81, 0.06);
+  --blue: #2563eb;
+  --blue-dim: rgba(37, 99, 235, 0.1);
+  --card: #ffffff;
+}
+
+[data-theme="light"] .nav {
+  background: rgba(255, 255, 255, 0.85);
+}
+
+[data-theme="light"] .mobile-menu {
+  background: rgba(255, 255, 255, 0.98);
+}
+
+[data-theme="light"] .cookie-banner {
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.06);
+}
+
+[data-theme="light"] .cookie-actions .btn-primary {
+  background: #111827;
+  color: #fff;
+}
+
+[data-theme="light"] .cookie-actions .btn-primary:hover {
+  background: #1f2937;
+}
+
+[data-theme="light"] .btn-primary {
+  background: #111827;
+  color: #fff;
+  border-color: #111827;
+}
+
+[data-theme="light"] .btn-primary:hover {
+  background: #1f2937;
+}
+
+[data-theme="light"] .btn-ghost {
+  border-color: var(--border);
+  color: var(--text);
+}
+
+[data-theme="light"] .hero h1 .gradient {
+  background: linear-gradient(135deg, var(--text) 0%, var(--text-muted) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+[data-theme="light"] .burger span,
+[data-theme="light"] .burger span::before,
+[data-theme="light"] .burger span::after {
+  background: var(--text);
+}
+
+/* Theme toggle */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: color var(--transition), border-color var(--transition);
+  flex-shrink: 0;
+}
+
+.theme-toggle:hover {
+  color: var(--text);
+  border-color: var(--text-muted);
+}
+
+/* Dark mode (default): show sun icon to switch to light */
+.theme-toggle .icon-sun { display: block; }
+.theme-toggle .icon-moon { display: none; }
+
+/* Light mode: show moon icon to switch to dark */
+[data-theme="light"] .theme-toggle .icon-sun { display: none; }
+[data-theme="light"] .theme-toggle .icon-moon { display: block; }
+
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html {
