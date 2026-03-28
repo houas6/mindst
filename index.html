@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MindState AI — IA d'entreprise sur mesure</title>
+    <title>MindState AI — IA d'entreprise, Data & DevOps sur mesure</title>
     <meta
       name="description"
-      content="MindState AI conçoit des solutions d'intelligence artificielle sur mesure pour les grandes entreprises. Agents conversationnels, Document AI, automatisation de workflows. Déploiement on-premise, souveraineté totale des données."
+      content="MindState AI conçoit des solutions d'intelligence artificielle, Data Engineering et DevOps sur mesure pour les entreprises. Tunisie, Afrique, Moyen-Orient, France & Europe."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
@@ -19,694 +19,731 @@
   </head>
 
   <body>
-    <!-- NAV -->
+    <!-- ============ NAV ============ -->
     <header class="nav" id="nav">
-      <div class="container">
-        <div class="nav-inner">
-          <a class="brand" href="#top">
-            <img src="logo.png" alt="MindState AI" />
-            <div class="brand-text">
-              <span class="brand-name">MindState AI</span>
-              <span class="brand-slogan">From Strategy to State of Mind</span>
-            </div>
-          </a>
-
-          <nav>
-            <ul class="nav-links">
-              <li><a href="#services">Services</a></li>
-              <li><a href="#intelligo">Intelligo!</a></li>
-              <li><a href="#souverainete">Souveraineté</a></li>
-              <li><a href="#processus">Processus</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav>
-
-          <div class="nav-cta">
-            <button class="theme-toggle" id="theme-toggle" aria-label="Changer le thème">
-              <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-              <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-            </button>
-            <a href="https://intelligo.space/" target="_blank" rel="noopener" class="btn btn-ghost btn-sm">Voir Intelligo!</a>
-            <a href="#contact" class="btn btn-primary btn-sm">Nous contacter</a>
-            <button
-              class="burger"
-              id="burger"
-              aria-label="Menu"
-              aria-expanded="false"
-            >
-              <span></span>
-            </button>
+      <div class="container nav-inner">
+        <a class="brand" href="#top">
+          <img src="logo.png" alt="MindState AI" />
+          <div class="brand-text">
+            <span class="brand-name">MindState AI</span>
+            <span class="brand-slogan">From Strategy to State of Mind</span>
           </div>
+        </a>
+
+        <nav class="nav-desktop">
+          <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#technologies">Technologies</a></li>
+            <li><a href="#diagnostic">Diagnostic IA</a></li>
+            <li><a href="#intelligo">Intelligo!</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="nav-cta">
+          <button class="theme-toggle" id="theme-toggle" aria-label="Changer le thème">
+            <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+          <a href="#diagnostic" class="btn btn-glow btn-sm">Diagnostic gratuit</a>
+          <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">
+            <span></span>
+          </button>
         </div>
       </div>
 
       <div class="mobile-menu" id="mobile-menu">
         <ul class="nav-links">
           <li><a href="#services">Services</a></li>
+          <li><a href="#technologies">Technologies</a></li>
+          <li><a href="#diagnostic">Diagnostic IA</a></li>
           <li><a href="#intelligo">Intelligo!</a></li>
-          <li><a href="#souverainete">Souveraineté</a></li>
-          <li><a href="#processus">Processus</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="mobile-cta">
-          <a href="https://intelligo.space/" target="_blank" rel="noopener" class="btn btn-ghost">Voir Intelligo!</a>
-          <a href="#contact" class="btn btn-primary">Nous contacter</a>
+          <a href="#diagnostic" class="btn btn-primary">Diagnostic gratuit</a>
         </div>
       </div>
     </header>
 
     <main id="top">
-      <!-- HERO -->
+      <!-- ============ HERO ============ -->
       <section class="hero">
+        <div class="hero-grid" id="hero-grid"></div>
         <div class="container">
           <div class="hero-content">
             <div class="badge">
               <span class="badge-dot"></span>
-              IA d'entreprise &middot; Tunisie &amp; Europe
+              Tunisie &middot; Afrique &middot; Moyen-Orient &middot; France &middot; Europe
             </div>
 
             <h1>
               <span id="typewriter"></span><span class="typewriter-cursor">|</span>
             </h1>
 
-            <p>
-              MindState AI conçoit et déploie des solutions d'IA sur mesure pour
-              les grandes entreprises. Agents conversationnels, Document AI,
-              automatisation de workflows — avec une souveraineté totale sur vos
-              données.
+            <p class="hero-sub">
+              Nous développons des solutions IA custom pour des clients enterprise
+              en Tunisie, Afrique, Moyen-Orient, France et en Europe.
+              Chaque projet est conçu pour s'intégrer dans votre infrastructure existante.
             </p>
 
             <div class="hero-actions">
-              <a href="https://calendly.com/hgara-mindstate/30min?back=1" target="_blank" rel="noopener" class="btn btn-primary btn-lg"
-                >Demander une démo</a
-              >
-              <a href="#services" class="btn btn-ghost btn-lg"
-                >Découvrir nos services</a
-              >
-            </div>
-          </div>
-
-          <div class="hero-metrics">
-            <div class="metric">
-              <strong>100%</strong>
-              <span>On-premise possible</span>
-            </div>
-            <div class="metric">
-              <strong>Multi-LLM</strong>
-              <span>OpenAI, Anthropic, Open-source</span>
-            </div>
-            <div class="metric">
-              <strong>B2B</strong>
-              <span>Banques, Assurances, Télécoms</span>
+              <a href="#diagnostic" class="btn btn-primary btn-lg">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                Diagnostic IA gratuit
+              </a>
+              <a href="#services" class="btn btn-ghost btn-lg">Découvrir nos services</a>
             </div>
           </div>
         </div>
       </section>
 
-      <hr class="section-divider" />
-
-      <!-- SERVICES -->
-      <section id="services">
+      <!-- ============ STATS ============ -->
+      <section class="stats">
         <div class="container">
-          <div class="section-head reveal">
-            <div class="section-label">Core Business</div>
-            <h2>IA sur mesure pour<br />grandes entreprises</h2>
-            <p>
-              Nous développons des solutions IA custom pour des clients
-              enterprise en Tunisie et en Europe. Chaque projet est conçu pour
-              s'intégrer dans votre infrastructure existante.
-            </p>
+          <div class="stats-grid">
+            <div class="stat-item reveal">
+              <span class="stat-number" data-target="30">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">Technologies maîtrisées</span>
+            </div>
+            <div class="stat-item reveal">
+              <span class="stat-number" data-target="72">0</span><span class="stat-suffix">h</span>
+              <span class="stat-label">Time-to-first-value moyen</span>
+            </div>
+            <div class="stat-item reveal">
+              <span class="stat-number" data-target="8">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">Secteurs adressés</span>
+            </div>
+            <div class="stat-item reveal">
+              <span class="stat-number" data-target="4">0</span><span class="stat-suffix"></span>
+              <span class="stat-label">Régions couvertes</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="section-divider">
+
+      <!-- ============ SERVICES ============ -->
+      <section class="services" id="services">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-tag">Core Business</span>
+            <h2>IA sur mesure pour<br>grandes entreprises.</h2>
+            <p>Nous développons des solutions IA custom pour des clients enterprise en Tunisie et en Europe. Chaque projet est conçu pour s'intégrer dans votre infrastructure existante.</p>
           </div>
 
-          <div class="services-grid reveal">
-            <div class="service-card">
-              <div class="service-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+          <div class="services-grid">
+            <!-- Service 1: Agents conversationnels -->
+            <div class="service-card reveal">
+              <div class="service-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </div>
               <h3>Agents conversationnels</h3>
-              <p>
-                Chatbots et copilots métier sur mesure. Intégration dans vos
-                canaux existants, entraînés sur vos données internes, avec une
-                compréhension fine de votre domaine.
-              </p>
+              <p class="service-desc">Chatbots et copilots métier sur mesure. Intégration dans vos canaux existants, entraînés sur vos données internes, avec une compréhension fine de votre domaine.</p>
             </div>
-            <div class="service-card">
-              <div class="service-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg></div>
+
+            <!-- Service 2: Document AI -->
+            <div class="service-card reveal">
+              <div class="service-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              </div>
               <h3>Document AI / OCR intelligent</h3>
-              <p>
-                Extraction automatique de données depuis vos documents :
-                factures, contrats, formulaires, courriers. Classification,
-                indexation et structuration intelligentes.
-              </p>
+              <p class="service-desc">Extraction automatique de données depuis vos documents : factures, contrats, formulaires, courriers. Classification, indexation et structuration intelligentes.</p>
             </div>
-            <div class="service-card">
-              <div class="service-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></div>
+
+            <!-- Service 3: Workflow Automation -->
+            <div class="service-card reveal">
+              <div class="service-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg>
+              </div>
               <h3>Automatisation de workflows</h3>
-              <p>
-                Orchestration de processus métier complexes par l'IA. Réduction
-                du travail manuel, accélération des décisions, intégration avec
-                vos outils existants.
-              </p>
+              <p class="service-desc">Orchestration de processus métier complexes par l'IA. Réduction du travail manuel, accélération des décisions, intégration avec vos outils existants.</p>
             </div>
-            <div class="service-card">
-              <div class="service-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></div>
+
+            <!-- Service 4: Knowledge Copilots -->
+            <div class="service-card reveal">
+              <div class="service-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              </div>
               <h3>Knowledge Copilots</h3>
-              <p>
-                Bases de connaissances internes augmentées par l'IA. Vos équipes
-                accèdent instantanément aux informations critiques à travers une
-                interface conversationnelle.
-              </p>
+              <p class="service-desc">Bases de connaissances internes augmentées par l'IA. Vos équipes accèdent instantanément aux informations critiques à travers une interface conversationnelle.</p>
+            </div>
+
+            <!-- Service 5: RAG & Modèles privés -->
+            <div class="service-card reveal">
+              <div class="service-icon icon-secure">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/><circle cx="12" cy="16" r="1"/></svg>
+              </div>
+              <h3>RAG & Modèles privés</h3>
+              <p class="service-desc">Retrieval-Augmented Generation sur vos données propriétaires. Modèles fine-tunés et déployés on-premise pour une confidentialité totale. Zéro fuite de données.</p>
+            </div>
+
+            <!-- Service 6: DevOps & Cloud -->
+            <div class="service-card reveal">
+              <div class="service-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="14" y1="4" x2="10" y2="20"/></svg>
+              </div>
+              <h3>DevOps & Cloud</h3>
+              <p class="service-desc">CI/CD, Infrastructure as Code, conteneurisation, monitoring. On déploie et on scale votre infrastructure — AWS, Azure, GCP ou on-premise.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <hr class="section-divider" />
-
-      <!-- DIFFERENTIATORS -->
-      <section id="differentiateurs">
+      <!-- ============ VALUES ============ -->
+      <section class="values">
         <div class="container">
-          <div class="section-head reveal">
-            <div class="section-label">Pourquoi MindState AI</div>
-            <h2>Conçu pour l'entreprise.</h2>
+          <div class="section-header reveal">
+            <span class="section-tag">Pourquoi nous</span>
+            <h2>Ce qui fait la différence.</h2>
           </div>
-
-          <div class="diff-grid reveal">
-            <div class="diff-card">
-              <h3>Souveraineté des données</h3>
-              <p>
-                Déploiement on-premise ou cloud privé. Zéro données qui sortent
-                de votre périmètre. Conforme aux exigences réglementaires les
-                plus strictes.
-              </p>
-              <span class="diff-tag">On-premise / Private cloud</span>
+          <div class="values-grid">
+            <div class="value-card reveal">
+              <div class="value-number">01</div>
+              <h4>Souveraineté des données</h4>
+              <p>100% on-premise possible. Vos données restent chez vous, toujours.</p>
             </div>
-            <div class="diff-card">
-              <h3>Multi-LLM</h3>
-              <p>
-                Compatible OpenAI, Anthropic, Grok et modèles open-source. Pas
-                de vendor lock-in : vous choisissez le modèle adapté à votre
-                cas d'usage et votre budget.
-              </p>
-              <span class="diff-tag">OpenAI &middot; Anthropic &middot; Open-source</span>
+            <div class="value-card reveal">
+              <div class="value-number">02</div>
+              <h4>Multi-LLM</h4>
+              <p>OpenAI, Anthropic, Mistral, LLaMA, Grok — on s'adapte, jamais de vendor lock-in.</p>
             </div>
-            <div class="diff-card">
-              <h3>Approche consulting</h3>
-              <p>
-                Chaque projet commence par un audit de vos processus. Nous
-                co-construisons la solution avec vos équipes métier et IT pour
-                garantir l'adoption.
-              </p>
-              <span class="diff-tag">Co-construction</span>
+            <div class="value-card reveal">
+              <div class="value-number">03</div>
+              <h4>Co-construction</h4>
+              <p>On ne livre pas une boîte noire. On construit avec vous, itération par itération.</p>
+            </div>
+            <div class="value-card reveal">
+              <div class="value-number">04</div>
+              <h4>Résultats mesurables</h4>
+              <p>Chaque projet est piloté par des KPIs concrets. Pas de promesses, des preuves.</p>
+            </div>
+            <div class="value-card reveal">
+              <div class="value-number">05</div>
+              <h4>Agilité & Rapidité</h4>
+              <p>Équipes réduites, décisions rapides, première valeur en semaines — pas en mois.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <hr class="section-divider" />
-
-      <!-- INTELLIGO! -->
-      <section id="intelligo">
+      <!-- ============ SECTORS ============ -->
+      <section class="sectors">
         <div class="container">
-          <div class="product-header">
-            <div class="section-head reveal">
-              <div class="section-label">Produit SaaS</div>
-              <h2>Intelligo! by MindState AI</h2>
-              <p>
-                Plateforme multi-LLM en self-service. Un catalogue d'agents IA
-                pré-configurés pour vos besoins métier, accessible immédiatement.
-              </p>
+          <div class="section-header reveal">
+            <span class="section-tag">Secteurs</span>
+            <h2>Des industries qu'on connaît<br>de l'intérieur.</h2>
+          </div>
+          <div class="sectors-grid">
+            <div class="sector-chip reveal">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M22 10H2"/></svg>
+              Banque & Finance
+            </div>
+            <div class="sector-chip reveal">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4"/><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/></svg>
+              Assurance
+            </div>
+            <div class="sector-chip reveal">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Télécom
+            </div>
+            <div class="sector-chip reveal">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><path d="M9 9h.01"/><path d="M9 13h.01"/><path d="M9 17h.01"/></svg>
+              Gouvernement
+            </div>
+            <div class="sector-chip reveal">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+              Santé
+            </div>
+            <div class="sector-chip reveal">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              E-learning
+            </div>
+            <div class="sector-chip reveal">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              Commerce international
+            </div>
+            <div class="sector-chip reveal">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+              Industrie & Manufacturing
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="agents-toolbar reveal">
-            <button class="chip active" data-filter="all">Tous</button>
-            <button class="chip" data-filter="finance">Finance</button>
-            <button class="chip" data-filter="legal">Juridique</button>
-            <button class="chip" data-filter="rh">RH</button>
-            <button class="chip" data-filter="tech">Tech</button>
-            <button class="chip" data-filter="other">Autre</button>
-          </div>
+      <hr class="section-divider">
 
-          <div class="agents-grid" id="agents-grid">
-            <!-- BankChat -->
-            <div class="agent-card reveal" data-category="finance">
-              <div class="agent-top">
-                <div class="agent-badge">
-                  <div class="agent-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="22" x2="21" y2="22"/><line x1="6" y1="18" x2="6" y2="11"/><line x1="10" y1="18" x2="10" y2="11"/><line x1="14" y1="18" x2="14" y2="11"/><line x1="18" y1="18" x2="18" y2="11"/><polygon points="12 2 2 7 22 7"/><line x1="2" y1="18" x2="22" y2="18"/></svg></div>
-                  <div class="agent-info">
-                    <h3>BankChat</h3>
-                    <div class="agent-sub">Agent bancaire</div>
+      <!-- ============ SOUVERAINETE ============ -->
+      <section class="sovereignty" id="souverainete">
+        <div class="container">
+          <div class="sov-layout reveal">
+            <div class="sov-visual">
+              <div class="sov-shield">
+                <div class="sov-shield-ring"></div>
+                <div class="sov-shield-ring ring-2"></div>
+                <div class="sov-shield-core">
+                  <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+                </div>
+              </div>
+              <div class="sov-floating-tags">
+                <span class="sov-tag tag-1">On-premise</span>
+                <span class="sov-tag tag-2">Chiffrement E2E</span>
+                <span class="sov-tag tag-3">RGPD</span>
+                <span class="sov-tag tag-4">Air-gapped</span>
+                <span class="sov-tag tag-5">Zero trust</span>
+              </div>
+            </div>
+
+            <div class="sov-content">
+              <span class="section-tag">Données sensibles</span>
+              <h2>IA Souveraine — Vos données ne quittent jamais votre infrastructure.</h2>
+              <p class="sov-intro">
+                Banques, assurances, institutions publiques, défense : vos données sont votre actif le plus critique.
+                Notre approche d'IA souveraine garantit un contrôle total, sans compromis sur la performance.
+              </p>
+
+              <div class="sov-features">
+                <div class="sov-feature">
+                  <div class="sov-feature-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                  </div>
+                  <div>
+                    <h4>Déploiement 100% on-premise</h4>
+                    <p>Modèles LLM hébergés sur vos propres serveurs. Aucune donnée ne transite vers un cloud tiers. Vous gardez la main, de A à Z.</p>
+                  </div>
+                </div>
+
+                <div class="sov-feature">
+                  <div class="sov-feature-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+                  </div>
+                  <div>
+                    <h4>Modèles open-source souverains</h4>
+                    <p>LLaMA, Mistral, Qwen — des modèles de pointe sans dépendance à un fournisseur cloud américain. Fine-tunés sur vos données métier.</p>
+                  </div>
+                </div>
+
+                <div class="sov-feature">
+                  <div class="sov-feature-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                  </div>
+                  <div>
+                    <h4>Conformité réglementaire native</h4>
+                    <p>RGPD, loi tunisienne sur les données personnelles, réglementations bancaires et sectorielles — la conformité est intégrée by design.</p>
+                  </div>
+                </div>
+
+                <div class="sov-feature">
+                  <div class="sov-feature-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+                  </div>
+                  <div>
+                    <h4>Environnements air-gapped</h4>
+                    <p>Pour les contextes les plus sensibles : déploiement en réseau isolé, sans aucune connexion internet. Idéal pour la défense et les infrastructures critiques.</p>
+                  </div>
+                </div>
+
+                <div class="sov-feature">
+                  <div class="sov-feature-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
+                  </div>
+                  <div>
+                    <h4>Chiffrement & contrôle d'accès</h4>
+                    <p>Chiffrement de bout en bout, gestion granulaire des rôles, audit trail complet. Architecture zero-trust appliquée à chaque couche.</p>
                   </div>
                 </div>
               </div>
-              <p class="agent-desc">
-                Assistant conversationnel pour les services bancaires. Gestion
-                des demandes clients, informations produits, support
-                transactionnel.
-              </p>
-              <div class="agent-features">
-                <div class="agent-feature">
-                  <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-                  <span>Support multilingue FR/AR/EN</span>
-                </div>
-                <div class="agent-feature">
-                  <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-                  <span>Intégration systèmes bancaires</span>
-                </div>
+
+              <div class="sov-cta">
+                <a href="#diagnostic" class="btn btn-primary btn-lg">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  Évaluer mon besoin en souveraineté
+                </a>
               </div>
-              <div class="agent-actions">
-                <a href="#contact" class="btn btn-primary btn-sm">Essayer</a>
-                <a href="#contact" class="btn btn-ghost btn-sm">En savoir plus</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ TECHNOLOGIES ============ -->
+      <section class="technologies" id="technologies">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-tag">Stack technique</span>
+            <h2>Les technologies qu'on maîtrise.</h2>
+            <p>Une stack moderne et éprouvée, choisie pour sa fiabilité en production.</p>
+          </div>
+
+          <div class="tech-grid">
+            <div class="tech-category reveal">
+              <h4>Langages</h4>
+              <div class="tech-items">
+                <div class="tech-item"><img src="logos-techno/python-svgrepo-com.svg" alt="Python" class="tech-logo"><span>Python</span></div>
+                <div class="tech-item"><img src="logos-techno/typescript-svgrepo-com.svg" alt="TypeScript" class="tech-logo"><span>TypeScript</span></div>
+                <div class="tech-item"><img src="logos-techno/js-svgrepo-com.svg" alt="JavaScript" class="tech-logo"><span>JavaScript</span></div>
               </div>
             </div>
 
-            <!-- InsureBot -->
-            <div class="agent-card reveal" data-category="finance">
-              <div class="agent-top">
-                <div class="agent-badge">
-                  <div class="agent-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-                  <div class="agent-info">
-                    <h3>InsureBot</h3>
-                    <div class="agent-sub">Agent assurance</div>
+            <div class="tech-category reveal">
+              <h4>IA & ML</h4>
+              <div class="tech-items">
+                <div class="tech-item"><img src="logos-techno/openai-text.svg" alt="OpenAI" class="tech-logo"><span>OpenAI</span></div>
+                <div class="tech-item"><img src="logos-techno/anthropic-symbol.svg" alt="Anthropic" class="tech-logo"><span>Anthropic</span></div>
+                <div class="tech-item"><img src="logos-techno/mistral.svg" alt="Mistral" class="tech-logo"><span>Mistral</span></div>
+                <div class="tech-item"><img src="logos-techno/langchain-text.svg" alt="LangChain" class="tech-logo"><span>LangChain</span></div>
+                <div class="tech-item"><img src="logos-techno/llama.png" alt="LLaMA" class="tech-logo"><span>LLaMA</span></div>
+                <div class="tech-item"><img src="logos-techno/qwen (1).svg" alt="Qwen" class="tech-logo"><span>Qwen</span></div>
+                <div class="tech-item"><img src="logos-techno/nvidia-svgrepo-com.svg" alt="NVIDIA" class="tech-logo"><span>NVIDIA</span></div>
+                <div class="tech-item"><img src="logos-techno/icons8-google-colab.svg" alt="Google Colab" class="tech-logo"><span>Google Colab</span></div>
+              </div>
+            </div>
+
+            <div class="tech-category reveal">
+              <h4>DevOps & Cloud</h4>
+              <div class="tech-items">
+                <div class="tech-item"><img src="logos-techno/kubernetes-svgrepo-com.svg" alt="Kubernetes" class="tech-logo"><span>Kubernetes</span></div>
+                <div class="tech-item"><img src="logos-techno/terraform-svgrepo-com.svg" alt="Terraform" class="tech-logo"><span>Terraform</span></div>
+                <div class="tech-item"><img src="logos-techno/aws-svgrepo-com.svg" alt="AWS" class="tech-logo"><span>AWS</span></div>
+                <div class="tech-item"><img src="logos-techno/microsoft-svgrepo-com.svg" alt="Azure" class="tech-logo"><span>Azure</span></div>
+                <div class="tech-item"><img src="logos-techno/hetzner-svgrepo-com.svg" alt="Hetzner" class="tech-logo"><span>Hetzner</span></div>
+                <div class="tech-item"><img src="logos-techno/ci-cd-svgrepo-com.svg" alt="CI/CD" class="tech-logo"><span>CI/CD</span></div>
+              </div>
+            </div>
+
+            <div class="tech-category reveal">
+              <h4>Bases de données</h4>
+              <div class="tech-items">
+                <div class="tech-item"><img src="logos-techno/postgresql-svgrepo-com.svg" alt="PostgreSQL" class="tech-logo"><span>PostgreSQL</span></div>
+                <div class="tech-item"><img src="logos-techno/mongodb-svgrepo-com.svg" alt="MongoDB" class="tech-logo"><span>MongoDB</span></div>
+                <div class="tech-item"><img src="logos-techno/elasticsearch-svgrepo-com.svg" alt="Elasticsearch" class="tech-logo"><span>Elasticsearch</span></div>
+              </div>
+            </div>
+
+            <div class="tech-category reveal">
+              <h4>Frameworks</h4>
+              <div class="tech-items">
+                <div class="tech-item"><img src="logos-techno/fastapi-svgrepo-com.svg" alt="FastAPI" class="tech-logo"><span>FastAPI</span></div>
+                <div class="tech-item"><img src="logos-techno/react-svgrepo-com.svg" alt="React" class="tech-logo"><span>React</span></div>
+              </div>
+            </div>
+
+            <div class="tech-category reveal">
+              <h4>Monitoring</h4>
+              <div class="tech-items">
+                <div class="tech-item"><img src="logos-techno/prometheus-svgrepo-com.svg" alt="Prometheus" class="tech-logo"><span>Prometheus</span></div>
+                <div class="tech-item"><img src="logos-techno/grafana-svgrepo-com.svg" alt="Grafana" class="tech-logo"><span>Grafana</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr class="section-divider">
+
+      <!-- ============ DIAGNOSTIC IA (Interactive Assessment) ============ -->
+      <section class="diagnostic" id="diagnostic">
+        <div class="container">
+          <div class="diagnostic-wrapper reveal">
+            <div class="diagnostic-header">
+              <div class="diagnostic-badge">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 0 1 4 4c0 1.95-1.4 3.58-3.25 3.93"/><circle cx="12" cy="12" r="3"/><path d="M12 16v6"/></svg>
+                Propulsé par l'IA
+              </div>
+              <h2>Diagnostic IA — Identifiez vos opportunités en 2 minutes.</h2>
+              <p>Notre outil intelligent analyse vos besoins et vous propose une feuille de route personnalisée. Aucun engagement, 100% gratuit.</p>
+            </div>
+
+            <div class="diagnostic-stepper">
+              <div class="stepper-progress">
+                <div class="stepper-bar" id="stepper-bar"></div>
+              </div>
+              <div class="stepper-labels">
+                <span class="stepper-label active" data-step="1">Secteur</span>
+                <span class="stepper-label" data-step="2">Défis</span>
+                <span class="stepper-label" data-step="3">Maturité</span>
+                <span class="stepper-label" data-step="4">Résultat</span>
+              </div>
+            </div>
+
+            <!-- Step 1: Sector -->
+            <div class="diagnostic-step active" data-step="1">
+              <h3>Dans quel secteur opérez-vous ?</h3>
+              <div class="diagnostic-options">
+                <button class="diag-option" data-value="banque">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M22 10H2"/></svg>
+                  Banque & Finance
+                </button>
+                <button class="diag-option" data-value="assurance">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                  Assurance
+                </button>
+                <button class="diag-option" data-value="telecom">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  Télécom
+                </button>
+                <button class="diag-option" data-value="gouvernement">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/></svg>
+                  Gouvernement
+                </button>
+                <button class="diag-option" data-value="sante">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+                  Santé
+                </button>
+                <button class="diag-option" data-value="autre">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v8"/><path d="M8 12h8"/></svg>
+                  Autre secteur
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 2: Challenges -->
+            <div class="diagnostic-step" data-step="2">
+              <h3>Quels sont vos principaux défis ?</h3>
+              <p class="step-hint">Sélectionnez un ou plusieurs défis.</p>
+              <div class="diagnostic-options multi">
+                <button class="diag-option" data-value="support">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                  Automatiser le support client
+                </button>
+                <button class="diag-option" data-value="documents">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                  Traiter des volumes de documents
+                </button>
+                <button class="diag-option" data-value="data">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                  Structurer & exploiter nos données
+                </button>
+                <button class="diag-option" data-value="devops">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg>
+                  Accélérer nos déploiements
+                </button>
+                <button class="diag-option" data-value="legacy">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                  Moderniser un système legacy
+                </button>
+                <button class="diag-option" data-value="knowledge">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                  Centraliser les connaissances internes
+                </button>
+              </div>
+              <div class="diagnostic-nav">
+                <button class="btn btn-ghost btn-sm diag-back">Retour</button>
+                <button class="btn btn-primary btn-sm diag-next" disabled>Continuer</button>
+              </div>
+            </div>
+
+            <!-- Step 3: Maturity -->
+            <div class="diagnostic-step" data-step="3">
+              <h3>Quel est votre niveau de maturité tech ?</h3>
+              <div class="diagnostic-options">
+                <button class="diag-option" data-value="debut">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 12h.01"/></svg>
+                  <div>
+                    <strong>Début du parcours</strong>
+                    <small>Peu ou pas d'IA/DevOps en place</small>
+                  </div>
+                </button>
+                <button class="diag-option" data-value="intermediaire">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 12h4"/></svg>
+                  <div>
+                    <strong>En progression</strong>
+                    <small>Quelques initiatives, besoin de structurer</small>
+                  </div>
+                </button>
+                <button class="diag-option" data-value="avance">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 12h8"/></svg>
+                  <div>
+                    <strong>Avancé</strong>
+                    <small>Stack en place, besoin d'optimiser ou scaler</small>
+                  </div>
+                </button>
+              </div>
+            </div>
+
+            <!-- Step 4: Result -->
+            <div class="diagnostic-step" data-step="4">
+              <div class="diagnostic-result" id="diagnostic-result">
+                <div class="result-loading">
+                  <div class="loader"></div>
+                  <p>Notre IA analyse vos réponses...</p>
+                </div>
+                <div class="result-content" id="result-content" style="display:none">
+                  <div class="result-icon">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+                  </div>
+                  <h3>Votre feuille de route personnalisée</h3>
+                  <div class="result-cards" id="result-cards"></div>
+                  <div class="result-cta">
+                    <p>Envie d'aller plus loin ? Parlons-en.</p>
+                    <a href="https://calendly.com/hgara-mindstate/30min?back=1" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Réserver un appel gratuit</a>
+                    <button class="btn btn-ghost btn-sm diag-restart">Recommencer le diagnostic</button>
                   </div>
                 </div>
               </div>
-              <p class="agent-desc">
-                Automatisation du parcours assuré : déclaration de sinistres,
-                suivi de dossiers, simulation de devis, orientation vers le bon
-                contrat.
-              </p>
-              <div class="agent-features">
-                <div class="agent-feature">
-                  <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-                  <span>Déclaration de sinistres automatisée</span>
-                </div>
-                <div class="agent-feature">
-                  <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-                  <span>Simulation de devis en temps réel</span>
-                </div>
-              </div>
-              <div class="agent-actions">
-                <a href="#contact" class="btn btn-primary btn-sm">Essayer</a>
-                <a href="#contact" class="btn btn-ghost btn-sm">En savoir plus</a>
-              </div>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <!-- LegalAgent -->
+      <hr class="section-divider">
+
+      <!-- ============ INTELLIGO ============ -->
+      <section class="intelligo" id="intelligo">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-tag">Produit SaaS</span>
+            <h2>Intelligo! — Des agents IA prêts à l'emploi.</h2>
+            <p>Un catalogue d'agents pré-configurés pour des cas d'usage métier. Déployez en quelques clics.</p>
+          </div>
+
+          <div class="agent-filters">
+            <button class="filter-btn active" data-filter="all">Tous</button>
+            <button class="filter-btn" data-filter="finance">Finance</button>
+            <button class="filter-btn" data-filter="legal">Legal</button>
+            <button class="filter-btn" data-filter="hr">RH</button>
+            <button class="filter-btn" data-filter="tech">Tech</button>
+            <button class="filter-btn" data-filter="gov">Gov</button>
+          </div>
+
+          <div class="agents-grid">
+            <div class="agent-card reveal" data-category="finance">
+              <div class="agent-tag">Finance</div>
+              <h4>BankChat</h4>
+              <p>Services bancaires, requêtes clients, support transactionnel.</p>
+            </div>
+            <div class="agent-card reveal" data-category="finance">
+              <div class="agent-tag">Finance</div>
+              <h4>InsureBot</h4>
+              <p>Sinistres, simulation de devis, routage de polices.</p>
+            </div>
             <div class="agent-card reveal" data-category="legal">
-              <div class="agent-top">
-                <div class="agent-badge">
-                  <div class="agent-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="3" x2="12" y2="21"/><path d="M5 8l7-5 7 5"/><path d="M4 14l3-3-3-3"/><path d="M20 14l-3-3 3-3"/><line x1="4" y1="21" x2="20" y2="21"/></svg></div>
-                  <div class="agent-info">
-                    <h3>LegalAgent</h3>
-                    <div class="agent-sub">Agent juridique</div>
-                  </div>
-                </div>
-              </div>
-              <p class="agent-desc">
-                Analyse de contrats, recherche jurisprudentielle, rédaction
-                assistée de documents juridiques. Gain de temps considérable
-                pour les équipes légales.
-              </p>
-              <div class="agent-features">
-                <div class="agent-feature">
-                  <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-                  <span>Analyse de clauses contractuelles</span>
-                </div>
-                <div class="agent-feature">
-                  <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-                  <span>Recherche jurisprudentielle IA</span>
-                </div>
-              </div>
-              <div class="agent-actions">
-                <a href="#contact" class="btn btn-primary btn-sm">Essayer</a>
-                <a href="#contact" class="btn btn-ghost btn-sm">En savoir plus</a>
-              </div>
+              <div class="agent-tag">Legal</div>
+              <h4>LegalAgent</h4>
+              <p>Analyse de contrats, recherche juridique, rédaction.</p>
             </div>
-
-            <!-- SmartDocs -->
             <div class="agent-card reveal" data-category="tech">
-              <div class="agent-top">
-                <div class="agent-badge">
-                  <div class="agent-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M4 9h16"/><path d="M9 4v16"/></svg></div>
-                  <div class="agent-info">
-                    <h3>SmartDocs</h3>
-                    <div class="agent-sub">Document AI</div>
-                  </div>
-                </div>
-              </div>
-              <p class="agent-desc">
-                Extraction intelligente de données depuis vos documents.
-                OCR avancé, classification automatique, structuration et
-                export vers vos systèmes.
-              </p>
-              <div class="agent-features">
-                <div class="agent-feature">
-                  <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-                  <span>OCR multilingue haute précision</span>
-                </div>
-                <div class="agent-feature">
-                  <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-                  <span>Export API / connecteurs ERP</span>
-                </div>
-              </div>
-              <div class="agent-actions">
-                <a href="#contact" class="btn btn-primary btn-sm">Essayer</a>
-                <a href="#contact" class="btn btn-ghost btn-sm">En savoir plus</a>
-              </div>
+              <div class="agent-tag">Tech</div>
+              <h4>SmartDocs</h4>
+              <p>Extraction documentaire, OCR, classification de données.</p>
             </div>
-
-            <!-- FinanceBot -->
             <div class="agent-card reveal" data-category="finance">
-              <div class="agent-top">
-                <div class="agent-badge">
-                  <div class="agent-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
-                  <div class="agent-info">
-                    <h3>FinanceBot</h3>
-                    <div class="agent-sub">Agent finance</div>
-                  </div>
-                </div>
-              </div>
-              <p class="agent-desc">
-                Analyse financière automatisée, reporting intelligent,
-                détection d'anomalies comptables. Un copilot pour vos
-                équipes finance et contrôle de gestion.
-              </p>
-              <div class="agent-features">
-                <div class="agent-feature">
-                  <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-                  <span>Analyse automatique des états financiers</span>
-                </div>
-                <div class="agent-feature">
-                  <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-                  <span>Détection d'anomalies et alertes</span>
-                </div>
-              </div>
-              <div class="agent-actions">
-                <a href="#contact" class="btn btn-primary btn-sm">Essayer</a>
-                <a href="#contact" class="btn btn-ghost btn-sm">En savoir plus</a>
-              </div>
+              <div class="agent-tag">Finance</div>
+              <h4>FinanceBot</h4>
+              <p>Analyse financière, reporting, détection d'anomalies.</p>
             </div>
-
-            <!-- GovFlow -->
-            <div class="agent-card reveal" data-category="other">
-              <div class="agent-top">
-                <div class="agent-badge">
-                  <div class="agent-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V7l7-4 7 4v14"/><path d="M9 21v-4h6v4"/><path d="M9 10h.01"/><path d="M15 10h.01"/><path d="M9 14h.01"/><path d="M15 14h.01"/></svg></div>
-                  <div class="agent-info">
-                    <h3>GovFlow</h3>
-                    <div class="agent-sub">Agent gouvernement</div>
-                  </div>
-                </div>
-              </div>
-              <p class="agent-desc">
-                Automatisation des processus administratifs publics. Accueil
-                citoyen, traitement de demandes, orientation et suivi de
-                dossiers pour les administrations.
-              </p>
-              <div class="agent-features">
-                <div class="agent-feature">
-                  <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-                  <span>Accueil citoyen 24/7</span>
-                </div>
-                <div class="agent-feature">
-                  <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-                  <span>Traitement automatisé des demandes</span>
-                </div>
-              </div>
-              <div class="agent-actions">
-                <a href="#contact" class="btn btn-primary btn-sm">Essayer</a>
-                <a href="#contact" class="btn btn-ghost btn-sm">En savoir plus</a>
-              </div>
+            <div class="agent-card reveal" data-category="gov">
+              <div class="agent-tag">Gov</div>
+              <h4>GovFlow</h4>
+              <p>Services citoyens, automatisation administrative.</p>
             </div>
-
-            <!-- Recruiter -->
-            <div class="agent-card reveal" data-category="rh">
-              <div class="agent-top">
-                <div class="agent-badge">
-                  <div class="agent-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" y1="8" x2="19" y2="14"/><line x1="22" y1="11" x2="16" y2="11"/></svg></div>
-                  <div class="agent-info">
-                    <h3>Recruiter</h3>
-                    <div class="agent-sub">Agent RH</div>
-                  </div>
-                </div>
-              </div>
-              <p class="agent-desc">
-                Screening de CVs, matching candidat-poste, planification
-                d'entretiens et génération de comptes-rendus. Accélérez vos
-                recrutements.
-              </p>
-              <div class="agent-features">
-                <div class="agent-feature">
-                  <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-                  <span>Screening automatique de CVs</span>
-                </div>
-                <div class="agent-feature">
-                  <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-                  <span>Matching intelligent candidat-poste</span>
-                </div>
-              </div>
-              <div class="agent-actions">
-                <a href="#contact" class="btn btn-primary btn-sm">Essayer</a>
-                <a href="#contact" class="btn btn-ghost btn-sm">En savoir plus</a>
-              </div>
+            <div class="agent-card reveal" data-category="hr">
+              <div class="agent-tag">RH</div>
+              <h4>Recruiter</h4>
+              <p>Tri de CVs, matching candidat-poste, planification d'entretiens.</p>
             </div>
-
-            <!-- QA Tester -->
             <div class="agent-card reveal" data-category="tech">
-              <div class="agent-top">
-                <div class="agent-badge">
-                  <div class="agent-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 2h6"/><path d="M10 2v6.5L7.5 13 10 22h4l2.5-9L14 8.5V2"/></svg></div>
-                  <div class="agent-info">
-                    <h3>QA Tester</h3>
-                    <div class="agent-sub">Agent qualité logicielle</div>
-                  </div>
-                </div>
+              <div class="agent-tag">Tech</div>
+              <h4>QA Tester</h4>
+              <p>Génération de tests, détection de régressions, analyse de logs.</p>
+            </div>
+          </div>
+
+          <div class="intelligo-cta reveal">
+            <a href="https://intelligo.space/" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Découvrir Intelligo!</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PRESENCE / MAP ============ -->
+      <section class="presence">
+        <div class="container">
+          <div class="section-header reveal">
+            <span class="section-tag">Présence</span>
+            <h2>Partout où vous avez besoin de nous.</h2>
+          </div>
+          <div class="presence-grid reveal">
+            <div class="presence-region">
+              <div class="region-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
               </div>
-              <p class="agent-desc">
-                Génération automatique de tests, détection de régressions,
-                analyse de logs et reporting qualité. Un copilot pour vos
-                équipes QA.
-              </p>
-              <div class="agent-features">
-                <div class="agent-feature">
-                  <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-                  <span>Génération de cas de test automatisée</span>
-                </div>
-                <div class="agent-feature">
-                  <span class="check"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
-                  <span>Analyse de logs et détection de bugs</span>
-                </div>
+              <h4>Tunisie</h4>
+              <p>Siège & équipe principale</p>
+            </div>
+            <div class="presence-region">
+              <div class="region-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
               </div>
-              <div class="agent-actions">
-                <a href="#contact" class="btn btn-primary btn-sm">Essayer</a>
-                <a href="#contact" class="btn btn-ghost btn-sm">En savoir plus</a>
+              <h4>Moyen-Orient & Afrique</h4>
+              <p>Projets actifs au Maghreb, Afrique subsaharienne & Golfe</p>
+            </div>
+            <div class="presence-region">
+              <div class="region-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/></svg>
               </div>
+              <h4>France</h4>
+              <p>Clients & partenariats stratégiques</p>
+            </div>
+            <div class="presence-region">
+              <div class="region-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+              </div>
+              <h4>Europe</h4>
+              <p>Expansion & collaborations internationales</p>
             </div>
           </div>
         </div>
       </section>
 
-      <hr class="section-divider" />
+      <hr class="section-divider">
 
-      <!-- SOVEREIGNTY -->
-      <section id="souverainete">
+      <!-- ============ CTA FINAL ============ -->
+      <section class="final-cta">
         <div class="container">
-          <div class="trust-grid">
-            <div class="trust-content reveal">
-              <div class="section-label">Data Sovereignty</div>
-              <h3>Vos données restent<br />chez vous. Point.</h3>
-              <p>
-                Nous déployons nos solutions directement dans votre
-                infrastructure. Aucune donnée ne transite par nos serveurs.
-                Vous gardez le contrôle total.
-              </p>
-
-              <div class="trust-list">
-                <div class="trust-item">
-                  <div class="trust-item-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
-                  <div>
-                    <strong>Déploiement on-premise</strong>
-                    <span
-                      >Installation dans votre datacenter ou cloud privé.
-                      Aucune dépendance externe.</span
-                    >
-                  </div>
-                </div>
-                <div class="trust-item">
-                  <div class="trust-item-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div>
-                  <div>
-                    <strong>Zero data leakage</strong>
-                    <span
-                      >Architecture air-gapped possible. Conforme aux normes
-                      bancaires et gouvernementales.</span
-                    >
-                  </div>
-                </div>
-                <div class="trust-item">
-                  <div class="trust-item-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg></div>
-                  <div>
-                    <strong>Portabilité totale</strong>
-                    <span
-                      >Pas de vendor lock-in. Changez de modèle LLM ou
-                      d'infrastructure à tout moment.</span
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="trust-visual reveal">
-              <p style="font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted);">
-                Modèles supportés
-              </p>
-              <div class="llm-logos">
-                <span class="llm-badge">OpenAI</span>
-                <span class="llm-badge">Anthropic</span>
-                <span class="llm-badge">Grok</span>
-                <span class="llm-badge">Mistral</span>
-                <span class="llm-badge">LLaMA</span>
-                <span class="llm-badge">Custom</span>
-              </div>
-              <p>
-                Choisissez le modèle adapté à chaque cas d'usage. Basculez
-                librement sans refonte.
-              </p>
+          <div class="final-cta-content reveal">
+            <h2>Prêt à transformer votre business avec l'IA ?</h2>
+            <p>Parlons de vos enjeux. Premier appel gratuit, sans engagement.</p>
+            <div class="final-cta-actions">
+              <a href="https://calendly.com/hgara-mindstate/30min?back=1" target="_blank" rel="noopener" class="btn btn-primary btn-lg">Réserver un créneau</a>
+              <a href="mailto:contact@mindstate.tech" class="btn btn-ghost btn-lg">contact@mindstate.tech</a>
             </div>
           </div>
         </div>
       </section>
 
-      <hr class="section-divider" />
-
-      <!-- PROCESS -->
-      <section id="processus">
+      <!-- ============ CONTACT ============ -->
+      <section class="contact" id="contact">
         <div class="container">
-          <div class="section-head section-head--center reveal">
-            <div class="section-label">Notre approche</div>
-            <h2>De l'audit au déploiement.</h2>
-            <p>
-              Un processus structuré, éprouvé sur des projets enterprise, pour
-              garantir des résultats concrets et mesurables.
-            </p>
-          </div>
-
-          <div class="process-grid reveal">
-            <div class="process-step">
-              <div class="step-num">01</div>
-              <h3>Audit &amp; Discovery</h3>
-              <p>
-                Analyse de vos processus, identification des cas d'usage à
-                fort impact, définition du périmètre et du ROI attendu.
-              </p>
-            </div>
-            <div class="process-step">
-              <div class="step-num">02</div>
-              <h3>Conception</h3>
-              <p>
-                Architecture technique, choix des modèles LLM, design des
-                workflows et des interfaces utilisateur.
-              </p>
-            </div>
-            <div class="process-step">
-              <div class="step-num">03</div>
-              <h3>Développement</h3>
-              <p>
-                Sprints itératifs avec vos équipes. Entraînement sur vos
-                données, tests de qualité, intégrations systèmes.
-              </p>
-            </div>
-            <div class="process-step">
-              <div class="step-num">04</div>
-              <h3>Déploiement &amp; Support</h3>
-              <p>
-                Mise en production dans votre infrastructure. Formation des
-                équipes, monitoring et support continu.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- CTA -->
-      <section class="cta">
-        <div class="container">
-          <div class="cta-box reveal">
-            <h2>Prêt à transformer<br />vos opérations avec l'IA ?</h2>
-            <p>
-              Contactez-nous pour un audit gratuit de vos processus et une
-              démonstration personnalisée de nos solutions.
-            </p>
-            <div class="cta-actions">
-              <a href="https://calendly.com/hgara-mindstate/30min?back=1" target="_blank" rel="noopener" class="btn btn-primary btn-lg"
-                >Demander une démo</a
-              >
-              <a href="https://intelligo.space/" target="_blank" rel="noopener" class="btn btn-ghost btn-lg"
-                >Explorer Intelligo!</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <hr class="section-divider" />
-
-      <!-- CONTACT -->
-      <section id="contact">
-        <div class="container">
-          <div class="section-head reveal">
-            <div class="section-label">Contact</div>
-            <h2>Parlons de votre projet.</h2>
-            <p>
-              Notre équipe est disponible pour discuter de vos besoins en IA
-              d'entreprise et vous proposer une approche adaptée.
-            </p>
-          </div>
-
-          <div class="contact-grid reveal">
-            <div class="contact-list">
+          <div class="contact-grid">
+            <div class="contact-info reveal">
+              <h3>Contactez-nous</h3>
               <div class="contact-item">
-                <div class="contact-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-                <div>
-                  <strong>Adresse</strong>
-                  <p>Immeuble Harbour, Avenue de la Bourse, Les Berges du Lac 2, Tunis</p>
-                </div>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Immeuble Harbour, Avenue de la Bourse,<br>Les Berges du Lac 2, Tunis</span>
               </div>
               <div class="contact-item">
-                <div class="contact-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
-                <div>
-                  <strong>Email</strong>
-                  <a href="mailto:contact@mindstate.tech">contact@mindstate.tech</a>
-                </div>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                <a href="mailto:contact@mindstate.tech">contact@mindstate.tech</a>
               </div>
               <div class="contact-item">
-                <div class="contact-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
-                <div>
-                  <strong>Téléphone</strong>
-                  <a href="tel:+21636694639">+216 36 694 639</a>
-                  <a href="tel:+21626318117">+216 26 318 117</a>
-                </div>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span>+216 36 694 639 / +216 26 318 117</span>
               </div>
-              <div class="contact-item">
-                <div class="contact-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></div>
-                <div>
-                  <strong>LinkedIn</strong>
-                  <a href="https://linkedin.com/company/mindstate-ai" target="_blank" rel="noopener">
-                    MindState AI
-                  </a>
-                </div>
+              <div class="contact-social">
+                <a href="https://linkedin.com/company/mindstate-ai" target="_blank" rel="noopener" aria-label="LinkedIn">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </a>
               </div>
             </div>
-
-            <div class="contact-map">
+            <div class="contact-map reveal">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.5!2d10.2536!3d36.8325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd34b3b0e7e5c7%3A0x2c8e7c8e8e8e8e8e!2sLes%20Berges%20du%20Lac%202%2C%20Tunis!5e0!3m2!1sfr!2stn!4v1"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3192.6!2d10.2!3d36.83!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzbCsDQ5JzQ4LjAiTiAxMMKwMTInMDAuMCJF!5e0!3m2!1sfr!2stn!4v1"
                 width="100%"
-                height="100%"
-                style="border: 0"
+                height="350"
+                style="border:0;border-radius:var(--radius-lg)"
                 allowfullscreen=""
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
-                title="Localisation MindState AI"
               ></iframe>
             </div>
           </div>
@@ -714,217 +751,290 @@
       </section>
     </main>
 
-    <!-- FOOTER -->
-    <footer>
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
       <div class="container">
-        <div class="footer-grid">
+        <div class="footer-inner">
           <div class="footer-brand">
-            <a class="brand" href="#top">
-              <img src="logo.png" alt="MindState AI" />
-              <div class="brand-text">
-                <span class="brand-name">MindState AI</span>
-                <span class="brand-slogan">From Strategy to State of Mind</span>
-              </div>
-            </a>
-            <p>
-              Solutions d'intelligence artificielle sur mesure pour les grandes
-              entreprises. Tunisie &amp; Europe.
-            </p>
+            <img src="logo.png" alt="MindState AI" />
+            <p>From Strategy to State of Mind.<br>IA, Data & DevOps pour les entreprises ambitieuses.</p>
           </div>
-
-          <div class="footer-col">
-            <h4>Services</h4>
-            <div class="footer-links">
-              <a href="#services">Agents conversationnels</a>
-              <a href="#services">Document AI</a>
-              <a href="#services">Automatisation</a>
-              <a href="#services">Knowledge Copilots</a>
+          <div class="footer-links">
+            <div class="footer-col">
+              <h5>Navigation</h5>
+              <a href="#services">Services</a>
+              <a href="#technologies">Technologies</a>
+              <a href="#diagnostic">Diagnostic IA</a>
+              <a href="#intelligo">Intelligo!</a>
             </div>
-          </div>
-
-          <div class="footer-col">
-            <h4>Produit</h4>
-            <div class="footer-links">
-              <a href="#intelligo">Intelligo! Platform</a>
-              <a href="#intelligo">BankChat</a>
-              <a href="#intelligo">SmartDocs</a>
-              <a href="#intelligo">Tous les agents</a>
+            <div class="footer-col">
+              <h5>Légal</h5>
+              <a href="mentions-legales.html">Mentions légales</a>
+              <a href="politique-confidentialite.html">Confidentialité</a>
             </div>
-          </div>
-
-          <div class="footer-col">
-            <h4>Entreprise</h4>
-            <div class="footer-links">
-              <a href="#contact">Contact</a>
-              <a href="#souverainete">Souveraineté</a>
-              <a href="#processus">Notre approche</a>
+            <div class="footer-col">
+              <h5>Contact</h5>
+              <a href="mailto:contact@mindstate.tech">contact@mindstate.tech</a>
+              <a href="tel:+21636694639">+216 36 694 639</a>
+              <a href="https://linkedin.com/company/mindstate-ai" target="_blank" rel="noopener">LinkedIn</a>
             </div>
           </div>
         </div>
-
         <div class="footer-bottom">
           <span>&copy; 2025 MindState AI. Tous droits réservés.</span>
-          <div class="footer-bottom-links">
-            <a href="mentions-legales.html">Mentions légales</a>
-            <a href="politique-confidentialite.html">Politique de confidentialité</a>
-          </div>
         </div>
       </div>
     </footer>
 
-    <!-- COOKIE BANNER -->
+    <!-- ============ COOKIE BANNER ============ -->
     <div class="cookie-banner" id="cookie-banner">
-      <span class="cookie-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10 4 4 0 0 1-5-5 4 4 0 0 1-5-5"/><path d="M2 12h.01"/><path d="M12 2v.01"/><circle cx="8" cy="8" r="1"/><circle cx="12" cy="14" r="1"/><circle cx="16" cy="10" r="1"/><circle cx="9" cy="18" r="1"/></svg></span>
-      <div class="cookie-content">
-        <p>Nous utilisons des cookies pour assurer le bon fonctionnement du site et analyser le trafic de manière anonyme. <a href="politique-confidentialite.html">Politique de confidentialité</a></p>
-        <div class="cookie-actions">
-          <button class="btn btn-ghost btn-sm" id="cookie-decline">Refuser</button>
-          <button class="btn btn-primary btn-sm" id="cookie-accept">Accepter</button>
-        </div>
+      <p>Nous utilisons des cookies pour améliorer votre expérience.</p>
+      <div class="cookie-actions">
+        <button class="btn btn-ghost btn-sm" id="cookie-decline">Refuser</button>
+        <button class="btn btn-primary btn-sm" id="cookie-accept">Accepter</button>
       </div>
     </div>
 
+    <!-- ============ SCRIPTS ============ -->
     <script>
-      // Theme toggle
-      (function () {
-        const saved = localStorage.getItem("theme");
-        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-        const theme = saved || (prefersDark ? "dark" : "dark");
-        if (theme === "light") document.documentElement.setAttribute("data-theme", "light");
+    /* === Theme Toggle === */
+    (function() {
+      const saved = localStorage.getItem('theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.dataset.theme = saved || (prefersDark ? 'dark' : 'light');
+    })();
 
-        document.getElementById("theme-toggle").addEventListener("click", () => {
-          const isLight = document.documentElement.getAttribute("data-theme") === "light";
-          if (isLight) {
-            document.documentElement.removeAttribute("data-theme");
-            localStorage.setItem("theme", "dark");
-          } else {
-            document.documentElement.setAttribute("data-theme", "light");
-            localStorage.setItem("theme", "light");
+    document.getElementById('theme-toggle').addEventListener('click', () => {
+      const current = document.documentElement.dataset.theme;
+      const next = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.dataset.theme = next;
+      localStorage.setItem('theme', next);
+    });
+
+    /* === Mobile Menu === */
+    const burger = document.getElementById('burger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    burger.addEventListener('click', () => {
+      const open = burger.getAttribute('aria-expanded') === 'true';
+      burger.setAttribute('aria-expanded', !open);
+      mobileMenu.classList.toggle('open', !open);
+      document.body.style.overflow = !open ? 'hidden' : '';
+    });
+    mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      burger.setAttribute('aria-expanded', 'false');
+      mobileMenu.classList.remove('open');
+      document.body.style.overflow = '';
+    }));
+
+    /* === Scroll Reveal === */
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); revealObserver.unobserve(e.target); }});
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    /* === Typewriter === */
+    const phrases = [
+      "L'IA qui comprend votre métier.",
+      "Data Engineering à l'échelle.",
+      "DevOps sans compromis.",
+      "Du conseil à la production."
+    ];
+    let phraseIdx = 0, charIdx = 0, isDeleting = false;
+    const tw = document.getElementById('typewriter');
+    function typewrite() {
+      const current = phrases[phraseIdx];
+      tw.textContent = current.substring(0, charIdx);
+      if (!isDeleting && charIdx < current.length) {
+        charIdx++;
+        setTimeout(typewrite, 50 + Math.random() * 40);
+      } else if (!isDeleting) {
+        setTimeout(() => { isDeleting = true; typewrite(); }, 2000);
+      } else if (isDeleting && charIdx > 0) {
+        charIdx--;
+        setTimeout(typewrite, 25);
+      } else {
+        isDeleting = false;
+        phraseIdx = (phraseIdx + 1) % phrases.length;
+        setTimeout(typewrite, 400);
+      }
+    }
+    typewrite();
+
+    /* === Animated Counter === */
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          const el = e.target;
+          const target = +el.dataset.target;
+          const duration = 2000;
+          const start = performance.now();
+          function tick(now) {
+            const progress = Math.min((now - start) / duration, 1);
+            const eased = 1 - Math.pow(1 - progress, 3);
+            el.textContent = Math.round(target * eased);
+            if (progress < 1) requestAnimationFrame(tick);
           }
+          requestAnimationFrame(tick);
+          counterObserver.unobserve(el);
+        }
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('.stat-number').forEach(el => counterObserver.observe(el));
+
+    /* === Hero Grid Animation === */
+    (function() {
+      const grid = document.getElementById('hero-grid');
+      const cols = Math.ceil(window.innerWidth / 60);
+      const rows = Math.ceil(600 / 60);
+      for (let i = 0; i < cols * rows; i++) {
+        const cell = document.createElement('div');
+        cell.className = 'grid-cell';
+        grid.appendChild(cell);
+      }
+      function flashRandom() {
+        const cells = grid.children;
+        const idx = Math.floor(Math.random() * cells.length);
+        cells[idx].classList.add('flash');
+        setTimeout(() => cells[idx].classList.remove('flash'), 600);
+      }
+      setInterval(flashRandom, 150);
+    })();
+
+    /* === Agent Filters === */
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('.agent-card').forEach(card => {
+          card.style.display = (filter === 'all' || card.dataset.category === filter) ? '' : 'none';
         });
-      })();
+      });
+    });
 
-      // Burger menu
-      const burger = document.getElementById("burger");
-      const mobileMenu = document.getElementById("mobile-menu");
+    /* === Diagnostic IA Tool === */
+    (function() {
+      let currentStep = 1;
+      const answers = { sector: '', challenges: [], maturity: '' };
 
-      burger.addEventListener("click", () => {
-        const isOpen = burger.classList.toggle("active");
-        mobileMenu.classList.toggle("open", isOpen);
-        burger.setAttribute("aria-expanded", isOpen);
-        document.body.style.overflow = isOpen ? "hidden" : "";
+      function showStep(n) {
+        document.querySelectorAll('.diagnostic-step').forEach(s => s.classList.remove('active'));
+        document.querySelector(`.diagnostic-step[data-step="${n}"]`).classList.add('active');
+        document.querySelectorAll('.stepper-label').forEach(l => {
+          l.classList.toggle('active', +l.dataset.step <= n);
+        });
+        document.getElementById('stepper-bar').style.width = ((n - 1) / 3 * 100) + '%';
+        currentStep = n;
+      }
+
+      // Step 1: Sector (single select, auto-advance)
+      document.querySelectorAll('.diagnostic-step[data-step="1"] .diag-option').forEach(btn => {
+        btn.addEventListener('click', () => {
+          answers.sector = btn.dataset.value;
+          document.querySelectorAll('.diagnostic-step[data-step="1"] .diag-option').forEach(b => b.classList.remove('selected'));
+          btn.classList.add('selected');
+          setTimeout(() => showStep(2), 300);
+        });
       });
 
-      // Close mobile menu on link click
-      mobileMenu.querySelectorAll("a").forEach((link) => {
-        link.addEventListener("click", () => {
-          burger.classList.remove("active");
-          mobileMenu.classList.remove("open");
-          burger.setAttribute("aria-expanded", "false");
-          document.body.style.overflow = "";
+      // Step 2: Challenges (multi select)
+      document.querySelectorAll('.diagnostic-step[data-step="2"] .diag-option').forEach(btn => {
+        btn.addEventListener('click', () => {
+          btn.classList.toggle('selected');
+          answers.challenges = Array.from(
+            document.querySelectorAll('.diagnostic-step[data-step="2"] .diag-option.selected')
+          ).map(b => b.dataset.value);
+          const nextBtn = document.querySelector('.diagnostic-step[data-step="2"] .diag-next');
+          nextBtn.disabled = answers.challenges.length === 0;
         });
       });
 
-      // Scroll reveal
-      const revealElements = document.querySelectorAll(".reveal");
-      const revealObserver = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add("revealed");
-              revealObserver.unobserve(entry.target);
+      document.querySelector('.diag-next')?.addEventListener('click', () => {
+        if (answers.challenges.length > 0) showStep(3);
+      });
+
+      document.querySelectorAll('.diag-back').forEach(btn => {
+        btn.addEventListener('click', () => showStep(currentStep - 1));
+      });
+
+      // Step 3: Maturity (single select, auto-advance to result)
+      document.querySelectorAll('.diagnostic-step[data-step="3"] .diag-option').forEach(btn => {
+        btn.addEventListener('click', () => {
+          answers.maturity = btn.dataset.value;
+          document.querySelectorAll('.diagnostic-step[data-step="3"] .diag-option').forEach(b => b.classList.remove('selected'));
+          btn.classList.add('selected');
+          setTimeout(() => {
+            showStep(4);
+            generateResult();
+          }, 300);
+        });
+      });
+
+      // Generate result
+      function generateResult() {
+        const loading = document.querySelector('.result-loading');
+        const content = document.getElementById('result-content');
+        const cardsEl = document.getElementById('result-cards');
+        loading.style.display = 'flex';
+        content.style.display = 'none';
+
+        const recommendations = {
+          support: { title: 'Agent Conversationnel', desc: 'Déployez un chatbot IA pour automatiser 70% des requêtes client de niveau 1.', icon: 'chat' },
+          documents: { title: 'Document AI', desc: 'OCR intelligent + extraction structurée pour traiter vos documents 10x plus vite.', icon: 'doc' },
+          data: { title: 'Data Platform', desc: 'Architecture data moderne : ingestion, transformation, analytics en temps réel.', icon: 'data' },
+          devops: { title: 'Pipeline DevOps', desc: 'CI/CD automatisé, Infrastructure as Code, déploiements en un clic.', icon: 'devops' },
+          legacy: { title: 'Modernisation', desc: 'Migration progressive de votre legacy vers une architecture cloud-native.', icon: 'code' },
+          knowledge: { title: 'Knowledge Base IA', desc: 'Base de connaissances alimentée par RAG — vos équipes trouvent l\'info en secondes.', icon: 'book' }
+        };
+
+        setTimeout(() => {
+          loading.style.display = 'none';
+          content.style.display = 'block';
+
+          let html = '';
+          answers.challenges.forEach((c, i) => {
+            const rec = recommendations[c];
+            if (rec) {
+              html += `<div class="result-card" style="animation-delay:${i * 0.1}s">
+                <div class="result-card-num">${i + 1}</div>
+                <div>
+                  <h4>${rec.title}</h4>
+                  <p>${rec.desc}</p>
+                </div>
+              </div>`;
             }
           });
-        },
-        { threshold: 0.1, rootMargin: "0px 0px -40px 0px" }
-      );
-      revealElements.forEach((el) => revealObserver.observe(el));
+          cardsEl.innerHTML = html;
+        }, 2000);
+      }
 
-      // Typewriter streaming effect
-      (function () {
-        const el = document.getElementById("typewriter");
-        const lines = [
-          { text: "L'intelligence artificielle\n", gradient: false },
-          { text: "au service de votre métier.", gradient: true },
-        ];
-        let lineIdx = 0;
-        let charIdx = 0;
-        let currentSpan = null;
-
-        function type() {
-          if (lineIdx >= lines.length) {
-            // Hide cursor after typing finishes
-            const cursor = document.querySelector(".typewriter-cursor");
-            if (cursor) setTimeout(() => cursor.style.display = "none", 1500);
-            return;
-          }
-
-          const line = lines[lineIdx];
-          if (charIdx === 0) {
-            currentSpan = document.createElement("span");
-            if (line.gradient) currentSpan.classList.add("gradient");
-            el.appendChild(currentSpan);
-          }
-
-          const char = line.text[charIdx];
-          if (char === "\n") {
-            el.appendChild(document.createElement("br"));
-          } else {
-            currentSpan.textContent += char;
-          }
-
-          charIdx++;
-          if (charIdx >= line.text.length) {
-            lineIdx++;
-            charIdx = 0;
-          }
-
-          const delay = 30 + Math.random() * 40;
-          setTimeout(type, delay);
-        }
-
-        // Start after a short delay
-        setTimeout(type, 400);
-      })();
-
-      // Agent filtering
-      const chips = document.querySelectorAll(".chip[data-filter]");
-      const agentCards = document.querySelectorAll(".agent-card[data-category]");
-
-      chips.forEach((chip) => {
-        chip.addEventListener("click", () => {
-          chips.forEach((c) => c.classList.remove("active"));
-          chip.classList.add("active");
-          const filter = chip.dataset.filter;
-
-          agentCards.forEach((card) => {
-            if (filter === "all" || card.dataset.category === filter) {
-              card.style.display = "";
-            } else {
-              card.style.display = "none";
-            }
-          });
-        });
+      // Restart
+      document.querySelector('.diag-restart')?.addEventListener('click', () => {
+        answers.sector = '';
+        answers.challenges = [];
+        answers.maturity = '';
+        document.querySelectorAll('.diag-option').forEach(b => b.classList.remove('selected'));
+        showStep(1);
       });
+    })();
 
-      // Cookie banner
-      (function () {
-        const banner = document.getElementById("cookie-banner");
-        if (localStorage.getItem("cookies-choice")) {
-          banner.style.display = "none";
-          return;
-        }
-        banner.classList.add("visible");
+    /* === Cookie Banner === */
+    if (!localStorage.getItem('cookies')) {
+      document.getElementById('cookie-banner').classList.add('show');
+    }
+    document.getElementById('cookie-accept')?.addEventListener('click', () => {
+      localStorage.setItem('cookies', 'accepted');
+      document.getElementById('cookie-banner').classList.remove('show');
+    });
+    document.getElementById('cookie-decline')?.addEventListener('click', () => {
+      localStorage.setItem('cookies', 'declined');
+      document.getElementById('cookie-banner').classList.remove('show');
+    });
 
-        document.getElementById("cookie-accept").addEventListener("click", () => {
-          localStorage.setItem("cookies-choice", "accepted");
-          banner.classList.remove("visible");
-        });
-        document.getElementById("cookie-decline").addEventListener("click", () => {
-          localStorage.setItem("cookies-choice", "declined");
-          banner.classList.remove("visible");
-        });
-      })();
+    /* === Navbar shrink on scroll === */
+    window.addEventListener('scroll', () => {
+      document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 50);
+    });
     </script>
   </body>
 </html>
