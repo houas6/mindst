@@ -149,7 +149,7 @@ function Footer({ t }) {
             </div>
             <p className="body-sm">{t("footer_tagline")}</p>
             <div className="footer-social">
-              <a href="#" aria-label="LinkedIn"><Icon name="linkedin" size={18} /></a>
+              <a href="https://www.linkedin.com/company/109588154" target="_blank" rel="noopener" aria-label="LinkedIn"><Icon name="linkedin" size={18} /></a>
               <a href="#" aria-label="GitHub"><Icon name="github" size={18} /></a>
               <a href="mailto:contact@mindstate.tech" aria-label="Email"><Icon name="mail" size={18} /></a>
             </div>
