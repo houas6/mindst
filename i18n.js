@@ -29,6 +29,12 @@ window.I18N = {
     demo_footer_right: "1.2s runtime",
 
     logos_label: "Deployed across banks, insurers and public sector",
+    logo_1: "Banking",
+    logo_2: "Insurance",
+    logo_3: "Telecom",
+    logo_4: "Public sector",
+    logo_5: "Finance",
+    logo_6: "Industry",
 
     services_num: "01 — Core services",
     services_title: "Four ways we ship enterprise AI.",
@@ -152,6 +158,12 @@ window.I18N = {
     demo_footer_right: "1,2s de runtime",
 
     logos_label: "Déployé dans des banques, assurances et le secteur public",
+    logo_1: "Banques",
+    logo_2: "Assurances",
+    logo_3: "Télécoms",
+    logo_4: "Secteur public",
+    logo_5: "Finance",
+    logo_6: "Industrie",
 
     services_num: "01 — Core services",
     services_title: "Quatre façons de livrer de l'IA d'entreprise.",

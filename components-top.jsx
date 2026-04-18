@@ -140,7 +140,7 @@ function Hero({ t }) {
 }
 
 function Logos({ t }) {
-  const items = ["Banque Nationale", "Atlas Assurance", "Tunisie Télécom", "Ministère des Finances", "Crédit Maghreb", "Harbour Group"];
+  const items = [t("logo_1"), t("logo_2"), t("logo_3"), t("logo_4"), t("logo_5"), t("logo_6")];
   return (
     <section className="logos">
       <div className="container logos-inner">
