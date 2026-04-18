@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" fill="none">
+  <defs>
+    <linearGradient id="ms-grad" x1="20%" y1="10%" x2="80%" y2="90%">
+      <stop offset="0%" stop-color="#F5822E"></stop>
+      <stop offset="50%" stop-color="#EF4D7A"></stop>
+      <stop offset="100%" stop-color="#C43A92"></stop>
+    </linearGradient>
+  </defs>
+  
+  <path d="M 28 60&#xA;       C 28 30, 62 22, 82 36&#xA;       C 98 47, 94 62, 80 64&#xA;       L 50 64&#xA;       C 34 64, 30 80, 48 84&#xA;       C 62 87, 76 80, 80 86&#xA;       C 86 96, 72 106, 56 102" stroke="url(#ms-grad)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"></path>
+  
+  <path d="M 44 46 C 56 44, 68 48, 72 54" stroke="url(#ms-grad)" stroke-width="9" stroke-linecap="round" opacity="0.9"></path>
+</svg>
