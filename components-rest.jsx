@@ -1,4 +1,6 @@
 // Compare, Company, Process, CTA, Contact, Footer
+const { useState: useStateR, useEffect: useEffectR } = React;
+
 function Compare({ t }) {
   const rows = [
     { dim: t("compare_row_1_dim"), sub: t("compare_row_1_sub"), us: t("compare_row_1_us"), plat: t("compare_row_1_plat"), cons: t("compare_row_1_cons"), type: "text" },
@@ -184,11 +186,38 @@ function Footer({ t }) {
         </div>
         <div className="footer-bottom">
           <span>{t("footer_copy")}</span>
-          <span>{t("footer_legal")}</span>
+          <span className="footer-legal">
+            <a href="mentions-legales.html">{t("footer_legal_1")}</a>
+            <a href="politique-confidentialite.html">{t("footer_legal_2")}</a>
+            <a href="mailto:contact@mindstate.tech">{t("footer_legal_3")}</a>
+          </span>
         </div>
       </div>
     </footer>
   );
 }
 
-Object.assign(window, { Compare, Company, CTA, Footer });
+function CookieBanner({ t }) {
+  const [show, setShow] = useStateR(false);
+  useEffectR(() => {
+    if (!localStorage.getItem("msai_cookie_consent")) setShow(true);
+  }, []);
+  const choose = (value) => {
+    localStorage.setItem("msai_cookie_consent", value);
+    setShow(false);
+  };
+  if (!show) return null;
+  return (
+    <div className="cookie-banner" role="dialog" aria-live="polite" aria-label={t("cookie_title")}>
+      <p className="cookie-text">
+        {t("cookie_text")} <a href="politique-confidentialite.html">{t("cookie_link")}</a>
+      </p>
+      <div className="cookie-actions">
+        <button className="btn btn-ghost btn-sm" onClick={() => choose("refused")}>{t("cookie_refuse")}</button>
+        <button className="btn btn-primary btn-sm" onClick={() => choose("accepted")}>{t("cookie_accept")}</button>
+      </div>
+    </div>
+  );
+}
+
+Object.assign(window, { Compare, Company, CTA, Footer, CookieBanner });

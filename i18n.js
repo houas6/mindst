@@ -127,6 +127,10 @@ window.I18N = {
     f3_1: "Sovereignty", f3_2: "Process", f3_3: "Contact", f3_4: "LinkedIn",
     footer_copy: "© 2026 MindState AI — All rights reserved",
     footer_legal: "Legal · Privacy · DPA",
+    footer_legal_1: "Legal notice", footer_legal_2: "Privacy", footer_legal_3: "DPA",
+    cookie_title: "Cookies",
+    cookie_text: "This site only uses cookies essential to its operation — no tracking, no advertising.",
+    cookie_link: "Learn more", cookie_accept: "Accept", cookie_refuse: "Decline",
 
     addr_title: "Headquarters",
     addr_val: "Immeuble Harbour, Avenue de la Bourse, Les Berges du Lac 2 — Tunis",
@@ -261,6 +265,10 @@ window.I18N = {
     f3_1: "Souveraineté", f3_2: "Processus", f3_3: "Contact", f3_4: "LinkedIn",
     footer_copy: "© 2026 MindState AI — Tous droits réservés",
     footer_legal: "Mentions légales · Confidentialité · DPA",
+    footer_legal_1: "Mentions légales", footer_legal_2: "Confidentialité", footer_legal_3: "DPA",
+    cookie_title: "Cookies",
+    cookie_text: "Ce site n'utilise que des cookies essentiels à son fonctionnement — aucun traceur ni publicité.",
+    cookie_link: "En savoir plus", cookie_accept: "Accepter", cookie_refuse: "Refuser",
 
     addr_title: "Siège",
     addr_val: "Immeuble Harbour, Avenue de la Bourse, Les Berges du Lac 2 — Tunis",
