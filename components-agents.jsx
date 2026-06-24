@@ -42,13 +42,14 @@ function Intelligo({ t }) {
     all: { icon: "grid" },
     finance: { icon: "coins" },
     legal: { icon: "gavel" },
+    compliance: { icon: "shield" },
     hr: { icon: "users" },
     tech: { icon: "terminal" },
     public: { icon: "building" },
   };
-  const cats = ["all", "finance", "legal", "hr", "tech", "public"];
-  const agentIcons = ["sparkles","chart","shield","mail","book","code","workflow","megaphone"];
-  const agents = [1,2,3,4,5,6,7,8].map(i => ({
+  const cats = ["all", "finance", "legal", "compliance", "hr", "tech", "public"];
+  const agentIcons = ["sparkles","shield","gavel","book","chart","building","users","terminal","flag","code","megaphone","coins"];
+  const agents = [1,2,3,4,5,6,7,8,9,10,11,12].map(i => ({
     i, t: t("ag_"+i+"_t"), s: t("ag_"+i+"_s"), d: t("ag_"+i+"_d"), cat: t("ag_"+i+"_cat"), icon: agentIcons[i-1]
   }));
   const visible = agents.filter(a => filter === "all" || a.cat === filter);
@@ -101,7 +102,7 @@ function Sovereignty({ t }) {
   const points = [1,2,3].map(i => ({
     t: t("sov_" + i + "_t"), d: t("sov_" + i + "_d"), icon: icons[i-1]
   }));
-  const models = ["OpenAI", "Anthropic", "Mistral", "LLaMA", "Grok", "Custom"];
+  const models = ["Qwen", "OpenAI", "Anthropic", "Mistral", "LLaMA", "Custom"];
   return (
     <section className="sovereignty" id="sovereignty">
       <div className="container">

@@ -62,9 +62,10 @@ window.I18N = {
 
     intelligo_num: "02 — Intelligo! by MindState",
     intelligo_title: "A catalogue of agents, ready to run.",
-    intelligo_lead: "Pre-configured AI agents for the workflows most enterprises run. Self-service on our multi-LLM platform, or deployed in your own infrastructure.",
+    intelligo_lead: "A multi-agent chat platform. Specialised agents read your documents (RAG), browse the web and run code on a real agent computer, and plug into Microsoft 365, Slack, GitHub and SAP. Self-service on our multi-LLM platform, or deployed in your own infrastructure.",
+    intelligo_explore: "Explore",
 
-    ag_all: "All", ag_finance: "Finance", ag_legal: "Legal", ag_hr: "HR", ag_tech: "Tech", ag_public: "Public sector",
+    ag_all: "All", ag_finance: "Finance", ag_legal: "Legal", ag_compliance: "Compliance", ag_hr: "HR", ag_tech: "Tech", ag_public: "Public sector",
 
     ag_1_t: "BankChat", ag_1_s: "Banking assistant", ag_1_d: "Handles client requests, product info and transactional support across digital channels.", ag_1_cat: "finance",
     ag_2_t: "InsureBot", ag_2_s: "Insurance agent", ag_2_d: "Claim filing, case tracking, quote simulation, contract orientation — end to end.", ag_2_cat: "finance",
@@ -74,6 +75,10 @@ window.I18N = {
     ag_6_t: "GovFlow", ag_6_s: "Public sector", ag_6_d: "Citizen intake 24/7, automated request handling, case routing for administrations.", ag_6_cat: "public",
     ag_7_t: "Recruiter", ag_7_s: "HR copilot", ag_7_d: "CV screening, candidate-role matching, interview scheduling and summaries.", ag_7_cat: "hr",
     ag_8_t: "QA Tester", ag_8_s: "Software QA", ag_8_d: "Test case generation, regression detection, log analysis, quality reporting.", ag_8_cat: "tech",
+    ag_9_t: "Copilot Conformité", ag_9_s: "Compliance copilot", ag_9_d: "Answers regulatory and policy questions grounded in your Microsoft 365 / SharePoint document base — with citations.", ag_9_cat: "compliance",
+    ag_10_t: "Code Builder", ag_10_s: "AI developer", ag_10_d: "Generates, runs and ships code in an isolated sandbox — the agent computer drives a real terminal and browser.", ag_10_cat: "tech",
+    ag_11_t: "Slides", ag_11_s: "Deck generator", ag_11_d: "Turns a brief or a dataset into a structured, on-brand slide deck, ready to export.", ag_11_cat: "tech",
+    ag_12_t: "Fatoora", ag_12_s: "E-invoicing", ag_12_d: "Extracts, validates and structures invoices for e-invoicing and tax compliance (VAT, customs).", ag_12_cat: "compliance",
 
     sov_num: "03 — Data sovereignty",
     sov_title: "Your data stays where it lives.",
@@ -81,7 +86,7 @@ window.I18N = {
     sov_1_t: "On-premise deployment",
     sov_1_d: "Install in your datacenter or private cloud. Zero external dependency, air-gapped architecture possible.",
     sov_2_t: "Multi-LLM — no lock-in",
-    sov_2_d: "OpenAI, Anthropic, Mistral, LLaMA, or your own models. Switch freely, per use case, without a rewrite.",
+    sov_2_d: "Qwen, OpenAI, Anthropic, Mistral, LLaMA, or your own models. Switch freely, per use case, without a rewrite.",
     sov_3_t: "You own what we build",
     sov_3_d: "Code, prompts, evals — handed over. Your stack, your runbook, your kill switch.",
     sov_models: "Supported models",
@@ -191,9 +196,10 @@ window.I18N = {
 
     intelligo_num: "02 — Intelligo! par MindState",
     intelligo_title: "Un catalogue d'agents, prêts à tourner.",
-    intelligo_lead: "Agents IA pré-configurés pour les workflows les plus répandus. Self-service sur notre plateforme multi-LLM, ou déployés dans votre propre infrastructure.",
+    intelligo_lead: "Une plateforme de chat multi-agents. Des agents spécialisés lisent vos documents (RAG), naviguent sur le web et exécutent du code sur un véritable ordinateur de l'agent, et se branchent à Microsoft 365, Slack, GitHub et SAP. En self-service sur notre plateforme multi-LLM, ou déployés dans votre propre infrastructure.",
+    intelligo_explore: "Découvrir",
 
-    ag_all: "Tous", ag_finance: "Finance", ag_legal: "Juridique", ag_hr: "RH", ag_tech: "Tech", ag_public: "Secteur public",
+    ag_all: "Tous", ag_finance: "Finance", ag_legal: "Juridique", ag_compliance: "Conformité", ag_hr: "RH", ag_tech: "Tech", ag_public: "Secteur public",
 
     ag_1_t: "BankChat", ag_1_s: "Assistant bancaire", ag_1_d: "Gestion des demandes clients, informations produits, support transactionnel sur tous les canaux digitaux.", ag_1_cat: "finance",
     ag_2_t: "InsureBot", ag_2_s: "Agent assurance", ag_2_d: "Déclaration de sinistres, suivi de dossiers, simulation de devis, orientation contrat — de bout en bout.", ag_2_cat: "finance",
@@ -203,6 +209,10 @@ window.I18N = {
     ag_6_t: "GovFlow", ag_6_s: "Secteur public", ag_6_d: "Accueil citoyen 24/7, traitement automatisé des demandes, routage de dossiers pour les administrations.", ag_6_cat: "public",
     ag_7_t: "Recruiter", ag_7_s: "Copilot RH", ag_7_d: "Screening de CVs, matching candidat-poste, planification d'entretiens et comptes-rendus.", ag_7_cat: "hr",
     ag_8_t: "QA Tester", ag_8_s: "Qualité logicielle", ag_8_d: "Génération de tests, détection de régressions, analyse de logs, reporting qualité.", ag_8_cat: "tech",
+    ag_9_t: "Copilot Conformité", ag_9_s: "Copilot conformité", ag_9_d: "Répond aux questions réglementaires et de politique interne, ancré dans votre base documentaire Microsoft 365 / SharePoint — avec citations.", ag_9_cat: "compliance",
+    ag_10_t: "Code Builder", ag_10_s: "Développeur IA", ag_10_d: "Génère, exécute et livre du code dans un sandbox isolé — l'ordinateur de l'agent pilote un vrai terminal et un navigateur.", ag_10_cat: "tech",
+    ag_11_t: "Slides", ag_11_s: "Générateur de présentations", ag_11_d: "Transforme un brief ou un jeu de données en présentation structurée à votre charte, prête à exporter.", ag_11_cat: "tech",
+    ag_12_t: "Fatoora", ag_12_s: "E-facturation", ag_12_d: "Extrait, valide et structure les factures pour l'e-facturation et la conformité fiscale (TVA, douane).", ag_12_cat: "compliance",
 
     sov_num: "03 — Souveraineté des données",
     sov_title: "Vos données restent là où elles vivent.",
@@ -210,7 +220,7 @@ window.I18N = {
     sov_1_t: "Déploiement on-premise",
     sov_1_d: "Installation dans votre datacenter ou cloud privé. Zéro dépendance externe, architecture air-gapped possible.",
     sov_2_t: "Multi-LLM — sans lock-in",
-    sov_2_d: "OpenAI, Anthropic, Mistral, LLaMA, ou vos propres modèles. Basculez librement, par cas d'usage, sans réécrire.",
+    sov_2_d: "Qwen, OpenAI, Anthropic, Mistral, LLaMA, ou vos propres modèles. Basculez librement, par cas d'usage, sans réécrire.",
     sov_3_t: "Vous possédez ce qu'on construit",
     sov_3_d: "Code, prompts, évals — remis. Votre stack, votre runbook, votre kill switch.",
     sov_models: "Modèles supportés",
