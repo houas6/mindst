@@ -91,6 +91,38 @@ function Company({ t }) {
   );
 }
 
+function DownloadApp({ t }) {
+  return (
+    <section className="downloadapp" id="download">
+      <div className="container">
+        <div className="downloadapp-card reveal">
+          <div className="downloadapp-glow"></div>
+          <div className="downloadapp-content">
+            <div className="downloadapp-badge"><span className="pulse-dot"></span> Nouveau · Application desktop</div>
+            <h2>Intelligo, maintenant sur votre bureau Windows</h2>
+            <p>Lancez vos agents IA dans une application native, en un clic, sans passer par le navigateur. Vos données et l'IA restent hébergées en Europe.</p>
+            <a className="downloadapp-btn" href="/downloads/Intelligo-Setup-1.0.0.exe" download>
+              <img src="assets/windows.png" alt="Windows" width="30" height="30" />
+              <span className="downloadapp-btn-text">
+                <strong>Télécharger sur Windows</strong>
+                <small>Gratuit · Windows 10 / 11 · 97 Mo</small>
+              </span>
+            </a>
+            <div className="downloadapp-note">
+              <span>✓ Gratuit</span>
+              <span>✓ Aucune carte requise</span>
+              <span>✓ Mises à jour incluses</span>
+            </div>
+          </div>
+          <div className="downloadapp-visual">
+            <img src="assets/mark-clean.png" alt="Intelligo" />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function CTA({ t }) {
   return (
     <section className="cta" id="cta">
