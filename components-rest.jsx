@@ -100,12 +100,12 @@ function DownloadApp({ t }) {
           <div className="downloadapp-content">
             <div className="downloadapp-badge"><span className="pulse-dot"></span> Nouveau · Application desktop</div>
             <h2>Intelligo, maintenant sur votre bureau Windows</h2>
-            <p>Lancez vos agents IA dans une application native, en un clic, sans passer par le navigateur. Vos données et l'IA restent hébergées en Europe.</p>
-            <a className="downloadapp-btn" href="/downloads/Intelligo-Setup-1.0.0.exe" download>
+            <p>Lancez vos agents IA dans un client natif ultra-léger (15 Mo), en un clic, sans passer par le navigateur. Mises à jour automatiques. Vos données et l'IA restent hébergées en Europe.</p>
+            <a className="downloadapp-btn" href="/downloads/Intelligo-Setup.exe" download>
               <img src="assets/windows.png" alt="Windows" width="30" height="30" />
               <span className="downloadapp-btn-text">
                 <strong>Télécharger sur Windows</strong>
-                <small>Gratuit · Windows 10 / 11 · 97 Mo</small>
+                <small>Gratuit · Windows 10 / 11 · 15 Mo · client natif</small>
               </span>
             </a>
             <div className="downloadapp-note">
